@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DJANGO APP</title>
+        <style>
+        h1 {
+        color: blue;
+        font-family: verdana;
+        font-size: 300%;
+        }
+        button{
+            font-size:20px;
+            background-color:#3399ff;
+            border:none;
+            font-weight:bolder;
+            color:white;
+            border-radius:20px
+        }
+        </style>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var clicks = 0;
+            function onClick() {
+            clicks += 1;
+            document.getElementById("clicks").innerHTML = clicks;
+            };
+            const minus=()=>{
+                 clicks -= 1;
+                document.getElementById("clicks").innerHTML = clicks;
+            }
+        </script>
+        <div style="text-Align:center">
+            <h1><a id="clicks">0</a></h1>
+            <button type="button" onClick="onClick()"
+            >COUNTER UP</button>
+            <button type="button" onClick="minus()"
+            >COUNTER DOWN</button>
+        </div>        
+    </body>
+</html>
